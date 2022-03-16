@@ -34,6 +34,15 @@ public class PlayerMovement : MonoBehaviour
         newVel *= moveSpeed;
 
         //Tell the physics rigidbody to use the new velocity.
+        //physicsBody.velocity = newVel;
+    }
+
+    public void MoveUp()
+    {
+        Debug.Log("MoveUp button.");
+
+        Vector2 newVel = new Vector2(0, moveSpeed);
+
         physicsBody.velocity = newVel;
     }
 }
