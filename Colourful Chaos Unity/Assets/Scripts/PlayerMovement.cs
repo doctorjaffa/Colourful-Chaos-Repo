@@ -45,4 +45,31 @@ public class PlayerMovement : MonoBehaviour
 
         physicsBody.velocity = newVel;
     }
+
+    public void MoveDown()
+    {
+        Debug.Log("MoveDown button.");
+
+        Vector2 newVel = new Vector2(0, moveSpeed);
+
+        physicsBody.velocity = -newVel;
+    }
+
+    public void MoveRight()
+    {
+        Debug.Log("MoveRight button.");
+
+        Vector2 newVel = new Vector2(moveSpeed, 0);
+
+        physicsBody.velocity = newVel;
+    }
+
+    public void MoveLeft()
+    {
+        Debug.Log("MoveLeft button.");
+
+        Vector2 newVel = new Vector2(moveSpeed, 0);
+
+        physicsBody.velocity = -newVel;
+    }
 }
