@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void MoveUp()
     {
-        Debug.Log("MoveUp button.");
+        //Debug.Log("MoveUp button.");
 
         Vector2 newVel = new Vector2(0, moveSpeed);
 
@@ -48,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void MoveDown()
     {
-        Debug.Log("MoveDown button.");
+        //Debug.Log("MoveDown button.");
 
         Vector2 newVel = new Vector2(0, moveSpeed);
 
@@ -57,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void MoveRight()
     {
-        Debug.Log("MoveRight button.");
+        //Debug.Log("MoveRight button.");
 
         Vector2 newVel = new Vector2(moveSpeed, 0);
 
@@ -66,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void MoveLeft()
     {
-        Debug.Log("MoveLeft button.");
+        //Debug.Log("MoveLeft button.");
 
         Vector2 newVel = new Vector2(moveSpeed, 0);
 
