@@ -80,7 +80,106 @@ TextureImporter:
     sprites: []
     outline: []
     physicsShape: []
-    bones: []
+    bones:
+    - name: Body-Down
+      guid: a695c016139ab4740ad9a0f4bab159f0
+      position: {x: 26.29451, y: 60.68871, z: 0}
+      rotation: {x: 0, y: 0, z: 0.67632854, w: 0.7366001}
+      length: 49.93321
+      parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 4278190335
+    - name: Body-Up
+      guid: 75c6f6eb5af73cf49862bb4322b80ddd
+      position: {x: 49.93321, y: 0.0000036397632, z: 0}
+      rotation: {x: 0, y: 0, z: 0.047467932, w: 0.99887276}
+      length: 43.80069
+      parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 4278255615
+    - name: Arm-Up-F
+      guid: fe2bb80386df22c45b25e9c9a7db2a4a
+      position: {x: 18.795906, y: 8.747743, z: 3}
+      rotation: {x: 0, y: -0, z: -0.8996412, w: 0.4366299}
+      length: 30.619478
+      parentId: 1
+      color:
+        serializedVersion: 2
+        rgba: 4278255360
+    - name: Arm-Down-F
+      guid: 2abe8adfa479aec4da6f8b43883b0484
+      position: {x: 30.619478, y: 0.0000018806609, z: 4}
+      rotation: {x: 0, y: 0, z: 0.061179392, w: 0.99812686}
+      length: 26.69139
+      parentId: 2
+      color:
+        serializedVersion: 2
+        rgba: 4294967040
+    - name: Leg-Up-F
+      guid: 8bf3d86961620ad45a56e721f4a36821
+      position: {x: -5.23993, y: 6.380622, z: 1}
+      rotation: {x: 0, y: -0, z: -0.99470603, w: 0.10276154}
+      length: 28.270565
+      parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 4294901760
+    - name: Leg-Down-F
+      guid: f93814fa57dba1b4989497fff96765cb
+      position: {x: 28.270565, y: -0.00000034996765, z: 1}
+      rotation: {x: 0, y: 0, z: -0.13685362, w: 0.99059135}
+      length: 24.958458
+      parentId: 4
+      color:
+        serializedVersion: 2
+        rgba: 4294902015
+    - name: Leg-Up-B
+      guid: bdfcac4cdc52683468cb82d82a7a5b99
+      position: {x: -3.8638635, y: -9.719396, z: -2}
+      rotation: {x: 0, y: -0, z: -0.99703246, w: 0.07698334}
+      length: 24.721867
+      parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 4278223103
+    - name: bone_8
+      guid: 497bd4327c1e72a439fc7a78682644e5
+      position: {x: 24.72187, y: 0.0000009577401, z: 0}
+      rotation: {x: 0, y: 0, z: -0.09645561, w: 0.9953373}
+      length: 27.426468
+      parentId: 6
+      color:
+        serializedVersion: 2
+        rgba: 4278255488
+    - name: Arm-Up-B
+      guid: fe09ef23a600cfb4c8a28e1f16c8b33e
+      position: {x: 15.022688, y: 14.312617, z: -4}
+      rotation: {x: 0, y: -0, z: -0.902951, w: 0.4297435}
+      length: 32.075935
+      parentId: 1
+      color:
+        serializedVersion: 2
+        rgba: 4286643968
+    - name: Arm-Down-B
+      guid: 67ab30a50d0158249899b1554f929a70
+      position: {x: 32.075935, y: -0.0000022569493, z: -4}
+      rotation: {x: 0, y: 0, z: 0.100843236, w: 0.9949024}
+      length: 27.194746
+      parentId: 8
+      color:
+        serializedVersion: 2
+        rgba: 4294934528
+    - name: Leg-Down-B
+      guid: 4f47b80a622750f45a670d863dc13190
+      position: {x: 30.121561, y: 154.23917, z: -2}
+      rotation: {x: 0, y: 0, z: 0.7125786, w: 0.7015923}
+      length: 82.07917
+      parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 4294901888
     spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
