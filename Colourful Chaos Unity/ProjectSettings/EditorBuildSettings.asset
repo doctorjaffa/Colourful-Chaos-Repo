@@ -6,12 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/Test Level.unity
-    guid: f73f3d6732bd99141b4b0bb36691cd65
-  - enabled: 1
     path: Assets/Scenes/Room 1.unity
     guid: 95920063b7eb80e4094145727b930a74
+  - enabled: 1
+    path: Assets/Scenes/Room 2.unity
+    guid: 3c19354de630acb42b3dbd963f1060e1
+  - enabled: 1
+    path: Assets/Scenes/Room 3.unity
+    guid: a29c8f3b2468a7d47a99cefce63c193a
+  - enabled: 1
+    path: Assets/Scenes/Pylon 1.unity
+    guid: 9b4880aef0102514ebd5dbd035482a87
+  - enabled: 1
+    path: Assets/Scenes/Room 4.unity
+    guid: 86c09db9a52a87f4fac0d6b296572fe6
+  - enabled: 1
+    path: Assets/Scenes/Final Corridor.unity
+    guid: a4ffa59b37f3448429f3c02772b73cdf
+  - enabled: 1
+    path: Assets/Scenes/Pylon 3.unity
+    guid: 85d54647c5af4114aa429ec659534074
+  - enabled: 1
+    path: Assets/Scenes/Boss Room.unity
+    guid: a2ce793c404da624288ccdac1e92d119
   m_configObjects: {}
