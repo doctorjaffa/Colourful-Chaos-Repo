@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 706773540857676138}
   - component: {fileID: 706773540857676142}
   - component: {fileID: 706773540857676143}
+  - component: {fileID: -5284352822458397734}
   m_Layer: 0
   m_Name: playerSprite
   m_TagString: Player
@@ -150,3 +151,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isColliding: 0
+--- !u!114 &-5284352822458397734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706773540857676137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea03bb54b3c7f5a4688abb1acd5ce368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreDisplay: {fileID: 0}
