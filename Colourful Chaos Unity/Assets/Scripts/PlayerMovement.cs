@@ -10,14 +10,11 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D physicsBody = null;
 
-    public bool isAttacking = false;
-
     // Start is called before the first frame update
     void Start()
     {
         physicsBody = GetComponent<Rigidbody2D>();
 
-        //physicsBody.velocity = new Vector2(2, 0);
     }
 
     // Update is called once per frame
@@ -48,13 +45,6 @@ public class PlayerMovement : MonoBehaviour
         //Tell the animator what the speeds are.
         ourAnimator.SetFloat("speedH", currentSpeedH);
         ourAnimator.SetFloat("speedV", currentSpeedV);
-
-        if (isAttacking)
-        {
-            ourAnimator.SetBool("isAttacking", true);
-
-            ourAnimator.SetBool("isAttacking", false);
-        }
     }
 
     public void MoveUp()
@@ -68,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Attack()
     {
-        isAttacking = true;
+        this.GetComponent<Animator>().SetTrigger("isAttacking");
     }
 
     public void MoveRight()

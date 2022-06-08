@@ -5029,6 +5029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetScene: Action Room
+  roomToSet: Final Corridor
 --- !u!61 &776455642
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5039,7 +5040,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.00000023841858, y: -0.066457406}
@@ -75332,11 +75333,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 706773540857676140, guid: 7cd33a1c33cadf54aad3e9d9db4fdec5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.371
+      value: -5.49
       objectReference: {fileID: 0}
     - target: {fileID: 706773540857676140, guid: 7cd33a1c33cadf54aad3e9d9db4fdec5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.52
+      value: -2.49
       objectReference: {fileID: 0}
     - target: {fileID: 706773540857676140, guid: 7cd33a1c33cadf54aad3e9d9db4fdec5, type: 3}
       propertyPath: m_LocalPosition.z

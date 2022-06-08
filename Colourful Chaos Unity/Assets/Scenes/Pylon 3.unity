@@ -87814,6 +87814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetScene: Action Room
+  roomToSet: Boss Room
 --- !u!61 &1869809996
 BoxCollider2D:
   m_ObjectHideFlags: 0

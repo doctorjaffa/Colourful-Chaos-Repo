@@ -66851,6 +66851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetScene: Action Room
+  roomToSet: Room 4
 --- !u!61 &945545585
 BoxCollider2D:
   m_ObjectHideFlags: 0

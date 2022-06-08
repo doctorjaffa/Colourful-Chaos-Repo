@@ -7,6 +7,7 @@ public class Door : MonoBehaviour
 {
 
     public string targetScene;
+    public string roomToSet;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -14,6 +15,8 @@ public class Door : MonoBehaviour
         //Check if it is the player. 
         if (collision.CompareTag("Player"))
         {
+            PlayerPrefs.SetString("nextRoom", roomToSet); // done when leaving other room to update new room to go to
+
             //It is the player.
             //Change scene.
             SceneManager.LoadScene(targetScene);
