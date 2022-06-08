@@ -49,5 +49,15 @@ public class PlayerHealth : MonoBehaviour
             lastHitTime = Time.time;
         }
     }
+
+    public int GetHealth()
+    {
+        return currentHealth;
+    }
+
+    public int GetMaxHealth()
+    {
+        return startingHealth;
+    }
    
 }

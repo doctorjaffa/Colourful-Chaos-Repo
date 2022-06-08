@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D physicsBody = null;
 
+    public bool isAttacking = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,8 +35,26 @@ public class PlayerMovement : MonoBehaviour
         //Goes from -speed to +speed.
         newVel *= moveSpeed;
 
-        //Tell the physics rigidbody to use the new velocity.
-        //physicsBody.velocity = newVel;
+        //Get rigidbody needed to find physics information.
+        Rigidbody2D ourRigidbody = GetComponent<Rigidbody2D>();
+
+        //Find out what the current horizontal and vertical speeds are.
+        float currentSpeedH = ourRigidbody.velocity.x;
+        float currentSpeedV = ourRigidbody.velocity.y;
+
+        //Get the animation that will be used for movement. 
+        Animator ourAnimator = GetComponent<Animator>();
+
+        //Tell the animator what the speeds are.
+        ourAnimator.SetFloat("speedH", currentSpeedH);
+        ourAnimator.SetFloat("speedV", currentSpeedV);
+
+        if (isAttacking)
+        {
+            ourAnimator.SetBool("isAttacking", true);
+
+            ourAnimator.SetBool("isAttacking", false);
+        }
     }
 
     public void MoveUp()
@@ -46,13 +66,9 @@ public class PlayerMovement : MonoBehaviour
         physicsBody.velocity = newVel;
     }
 
-    public void MoveDown()
+    public void Attack()
     {
-        //Debug.Log("MoveDown button.");
-
-        Vector2 newVel = new Vector2(0, moveSpeed);
-
-        physicsBody.velocity = -newVel;
+        isAttacking = true;
     }
 
     public void MoveRight()

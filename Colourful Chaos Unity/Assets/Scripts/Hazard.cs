@@ -23,6 +23,7 @@ public class Hazard : MonoBehaviour
         if (healthScript) 
         {
             healthScript.ChangeHealth(-hazardDamage);
+            Destroy(gameObject);
         }
         
     }

@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3681718962587479288}
   - component: {fileID: 5352095148955874006}
   - component: {fileID: 2220159758474303428}
+  - component: {fileID: -4595289636496220718}
+  - component: {fileID: 1746461722199023004}
   m_Layer: 0
   m_Name: enemySprite
   m_TagString: Untagged
@@ -121,4 +123,31 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!114 &-4595289636496220718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9014980087932733945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e2ca61a407e35141a0bd2508fdd0b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceStrength: 15
+  target: {fileID: 706773540857676140, guid: 7cd33a1c33cadf54aad3e9d9db4fdec5, type: 3}
+--- !u!114 &1746461722199023004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9014980087932733945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eab1fb8523101f488c86635bde6a024, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hazardDamage: 15
