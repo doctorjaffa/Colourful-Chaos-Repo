@@ -7,8 +7,13 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public float moveSpeed = 3.0f;
+    public float jumpForce = 150f;
+
+    public int jumpCharge = 1;
+    public Collider2D jumpSensor;
 
     private Rigidbody2D physicsBody = null;
+
 
     // Start is called before the first frame update
     void Start()
@@ -45,15 +50,23 @@ public class PlayerMovement : MonoBehaviour
         //Tell the animator what the speeds are.
         ourAnimator.SetFloat("speedH", currentSpeedH);
         ourAnimator.SetFloat("speedV", currentSpeedV);
+
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Ground"))
+            jumpCharge = 1;
     }
 
     public void MoveUp()
     {
-        //Debug.Log("MoveUp button.");
+        if (jumpCharge > 0)
+        {
 
-        Vector2 newVel = new Vector2(0, moveSpeed);
-
-        physicsBody.velocity = newVel;
+            physicsBody.AddForce(Vector2.up * jumpForce);
+            jumpCharge--;
+        }
     }
 
     public void Attack()
@@ -63,7 +76,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void MoveRight()
     {
-        //Debug.Log("MoveRight button.");
 
         Vector2 newVel = new Vector2(moveSpeed, 0);
 
@@ -72,7 +84,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void MoveLeft()
     {
-        //Debug.Log("MoveLeft button.");
 
         Vector2 newVel = new Vector2(moveSpeed, 0);
 

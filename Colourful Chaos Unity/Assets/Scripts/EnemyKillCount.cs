@@ -7,7 +7,7 @@ public class EnemyKillCount : MonoBehaviour
 {
     private int killCount = 0;
     private int loadRoom = 4;
-    private string nextRoom ;
+    private string nextRoom;
 
 
     public void AddKill()
