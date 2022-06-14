@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 8965902189567620769}
   - component: {fileID: 5189977101893551169}
   - component: {fileID: 9034214140535208923}
+  - component: {fileID: -7327073830136406316}
   m_Layer: 0
   m_Name: playerSprite
   m_TagString: Player
@@ -215,3 +216,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.038646, y: 3.0239305}
   m_EdgeRadius: 0
+--- !u!114 &-7327073830136406316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706773540857676137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62c0da9af6d9f3f418d99e71021f6eed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallDamage: 5
