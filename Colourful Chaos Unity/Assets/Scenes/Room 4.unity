@@ -1082,7 +1082,7 @@ PrefabInstance:
     - target: {fileID: -5284352822458397734, guid: 7cd33a1c33cadf54aad3e9d9db4fdec5, type: 3}
       propertyPath: scoreDisplay
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1947561423}
     - target: {fileID: 706773540857676137, guid: 7cd33a1c33cadf54aad3e9d9db4fdec5, type: 3}
       propertyPath: m_Name
       value: playerSprite

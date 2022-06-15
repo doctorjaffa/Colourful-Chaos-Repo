@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //Purpose: Handle player damage and dying when told to do so by a hazard.
 
@@ -13,6 +14,7 @@ public class PlayerHealth : MonoBehaviour
     public float hitInvincibilityMaxTime = 1;
     private float lastHitTime = 0;
 
+
     private void Awake()
     {
         //Initialise current health to be equal to the starting health when the player spawns.
@@ -23,8 +25,8 @@ public class PlayerHealth : MonoBehaviour
     //Action: Kill the player (Delete the player game object).
     public void Kill()
     {
-        //Destroy the object this script is attached to.
-        Destroy(gameObject);
+        //Send the player back to the start of the level.
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     //Action: Change current health by a set amount and record when the player was last hit.

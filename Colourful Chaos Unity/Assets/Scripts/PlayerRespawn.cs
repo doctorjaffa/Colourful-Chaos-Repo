@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerRespawn : MonoBehaviour
 {
@@ -15,16 +16,12 @@ public class PlayerRespawn : MonoBehaviour
     {
         initialPosition = gameObject.transform.position;
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
+
         if (collision.gameObject.CompareTag("Ground"))
 
             lastPosition = gameObject.transform.position;
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
 
         if (collision.CompareTag("Death Barrier"))
         {
@@ -33,6 +30,9 @@ public class PlayerRespawn : MonoBehaviour
             healthScript.ChangeHealth(-fallDamage);
 
             gameObject.transform.position = lastPosition;
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+
     }
 }

@@ -8,6 +8,7 @@ TagManager:
   - Final Boss
   - Ground
   - Death Barrier
+  - Floor
   layers:
   - Default
   - TransparentFX
