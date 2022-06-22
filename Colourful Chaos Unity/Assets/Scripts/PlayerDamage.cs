@@ -19,9 +19,6 @@ public class PlayerDamage : MonoBehaviour
         }
         else if (collision.CompareTag("Final Boss"))
         {
-            KillEnemy(collision.gameObject);
-
-            Destroy(gameObject);
 
             SceneManager.LoadScene("Win Screen");
         }
